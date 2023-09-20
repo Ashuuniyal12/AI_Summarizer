@@ -7,7 +7,7 @@ import { AiFillGithub } from "react-icons/ai";
 const Hero = () => {
   return (
     <>
-      <div className="w-full top-5 absolute sm:px-20">
+      <div className="w-full top-5 absolute sm:px-20 px-5">
       <nav className="flex justify-between items-center w-full mb-10">
         <Image src={logo} alt="sumz_logo" className="w-28 object-contain" />
         <div className="flex gap-3">
