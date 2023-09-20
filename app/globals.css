@@ -12,7 +12,7 @@
   position: fixed;
   display: flex;
   justify-content: center;
-  padding: 120px 24px 160px 24px;
+  padding: 0px 24px 160px 24px;
   pointer-events: none;
 }
 
@@ -75,7 +75,7 @@
 /* Tailwind Styles */
 
 .app {
-  @apply relative z-10 flex justify-center items-center flex-col mx-auto sm:px-16 px-6 min-h-screen;
+  @apply relative z-10 flex justify-center items-center flex-col mx-auto sm:px-16 px-6 min-h-screen my-0 py-0;
 }
 
 .black_btn {
