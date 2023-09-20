@@ -2,6 +2,7 @@
 import { copy, linkIcon, loader, tick, plane } from "@/assets";
 import Image from "next/image";
 import { useState, useEffect, FormEvent } from "react";
+import {FaRegPaperPlane} from "react-icons/fa";
 
 const Demo = () => {
   const [article, setArticle] = useState({
@@ -101,9 +102,9 @@ const Demo = () => {
           />
           <button
             type="submit"
-            className="submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700"
+            className="submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700 dark:text-white"
           >
-            <Image src={plane} alt="Link Icon" className="" />
+            <FaRegPaperPlane/>
           </button>
         </form>
         {/* Browse URL History */}
@@ -122,7 +123,7 @@ const Demo = () => {
                   className='w-[40%] h-[40%] object-contain'
                 />
               </div>
-              <p className='flex-1 font-satoshi text-blue-700 font-medium text-sm truncate'>
+              <p className='flex-1 font-satoshi text-blue-700 dark:text-blue-200 font-medium text-sm truncate'>
                 {item.url}
               </p>
             </div>
@@ -142,11 +143,11 @@ const Demo = () => {
         ) : (
           article.summary && (
             <div className='flex flex-col gap-3'>
-              <h2 className='font-satoshi font-bold text-gray-600 text-xl'>
+              <h2 className='font-satoshi font-bold text-gray-600 dark:text-gray-200 text-xl'>
                 Article <span className='blue_gradient'>Summary</span>
               </h2>
               <div className='summary_box'>
-                <p className='font-inter font-medium text-sm text-gray-700'>
+                <p className='font-inter font-medium text-sm text-gray-700 dark:text-gray-100'>
                   {article.summary}
                 </p>
               </div>

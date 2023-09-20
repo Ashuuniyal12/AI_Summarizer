@@ -2,13 +2,17 @@
 
 import { logo } from "@/assets"
 import Image from 'next/image'
-
+import ThemeSwitcher from "./ThemeSwitcher"
+import {AiFillGithub} from 'react-icons/ai'
 const Hero = () => {
   return (
     <header className="w-full flex justify-center items-center flex-col ">
       <nav className="flex justify-between items-center w-full pt-3 mb-10">
         <Image src={logo} alt="sumz_logo" className="w-28 object-contain" />
-        <button className="black_btn" type="button" onClick={()=> window.open("https://github.com/Ashuuniyal12/AI_Summarizer")}>GitHub</button>
+        <div className="flex gap-3">
+        <button className="black_btn flex items-center justify-center gap-1" type="button" onClick={()=> window.open("https://github.com/Ashuuniyal12/AI_Summarizer")}>GitHub <AiFillGithub/></button>
+        <ThemeSwitcher/>
+        </div>
       </nav>
 
       <h1 className="head_text">Summarize Articles With <br className="max-md:hidden" />
